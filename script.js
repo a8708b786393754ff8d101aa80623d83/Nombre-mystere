@@ -2,13 +2,12 @@ let number__ = [1,2,3,4,5,6,7,8,9,0];
 function choice(i){
     return Math.floor(Math.random() * i);
 }
-
 function Jeux(){
     const NumberMyster= choice(number__.length)
     let FoundNumberMyster = false
     alert(NumberMyster);
     while(!FoundNumberMyster){
-        let choice = prompt("Bienvenue au jeux du nombre myster,Veuiller entrer un nombre pour deviner:");
+        let choice = prompt("Bienvenue au jeux du nombre mystere,Veuiller entrer un nombre pour le deviner:");
         if (choice != Number){
             alert('Il ya un probleme,entrez un nombre');
             continue;
